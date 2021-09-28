@@ -1,7 +1,7 @@
 
 <div class="text-layout">
     <h1>Pipes básicos</h1>
-    <p>Pipes incluídos en Angular. Usualmente en el CommunModule</p>
+    <p>Pipes incluidos en Angular. Usualmente en el CommunModule</p>
 </div>
 
 <div class="p-grid">
@@ -36,6 +36,10 @@
                 <li>fecha|date:'long'</li>
                 <li>fecha|date:'E d LLL YYYY'</li>
             </ul>
+            <hr>
+            <ul>
+                <li>fecha|date:'long':'GMT+1'</li>
+            </ul>
         </p-card>
     </div>
     <div class="p-col">
@@ -44,7 +48,13 @@
                 <li>{{fecha}}</li>
                 <li>{{fecha|date}}</li>
                 <li>{{fecha|date:'short'}}</li>
+                <li>{{fecha|date:'long'}}</li>
                 <li>{{fecha|date:'E d LLL YYYY'}}</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>{{fecha|date:'long':'GMT+1'}}</li>
+                <li>{{ fecha|date:'long':'GMT+1':'en' }}</li>
             </ul>
         </p-card>
     </div>

@@ -16,7 +16,7 @@ html, body{
 
 .p-grid{
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
     gap: 10px;
 }
