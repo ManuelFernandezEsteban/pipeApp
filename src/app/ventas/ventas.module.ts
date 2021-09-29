@@ -5,15 +5,24 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { MayusculasPipe } from './pipes/mayuscuslas.pipes';
+import { VuelaPipe } from './pipes/vuela.pipes';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 
 
 
 @NgModule({
   declarations: [
+    //components
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrdenarComponent,
+
+    //pipes
+    MayusculasPipe,
+    VuelaPipe,
+    OrdenarPipe
   ],
   exports:[
     NumerosComponent,

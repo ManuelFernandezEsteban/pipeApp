@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { rejects } from 'assert';
-import { resolve } from 'dns';
 import { interval } from 'rxjs';
 
 @Component({
